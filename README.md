@@ -59,7 +59,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  <ul>
+  <li>Slaat de inlogbutton over in de navigatiebalk in Safari als ik met TAB navigeer door de pagina.</li>
+  <li>Gaat alleen naar alle buttons, niet semantisch dus.</li>
+  </ul>
 </details>
 
 
