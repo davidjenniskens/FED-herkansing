@@ -1,31 +1,120 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  /* startje */
+  --color-text: rgb(255, 255, 255);
+  --color-background: rgb(0, 0, 0);
+  --font-weight-normaal: 400;
+  --primaire-button-color: rgb(255, 106, 0);
+  --secundairebutton-color: rgb(255, 255, 255);
+  --selected-abonnement: rgb(0, 128, 255);
+  --unselected-abonnement: rgb(69, 69, 69);
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text);
+  font-weight: var(--font-weight-normaal);
+  text-align: center;
+  background-color: var(--color-background);
+}
 
+h1 {
+  font-size: 3em;
+  font-weight: var(--font-weight-normaal);
+}
 
+h2 {
+  font-size: 2em;
+  font-weight: var(--font-weight-normaal);
+}
 
+h3 {
+  font-size: 1.15em;
+  font-weight: var(--font-weight-normaal);
+}
+
+p {
+  font-weight: var(--font-weight-normaal);
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+nav img {
+  width: 48px;
+  height: auto;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
+li button {
+  background-color: var(--unselected-abonnement);
+  color: var(--color-text);
+  font-size: 1em;
+  border-radius: 99px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
 
-/* jouw code */
+ul li:first-child button {
+  background-color: var(--selected-abonnement);
+}
 
+a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+Primaire ahref 
+
+
+
+/* Feedback na eerste keer HTML bekijken */
+/* Geen pixels, maar ems */
+/* Gebruik een marker of ::before om vinkje toe te voegen bij list items */
+/* Zet je kleuren in variables */
