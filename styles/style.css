@@ -13,8 +13,12 @@
 :root {
   /* startje */
   --color-text: rgb(255, 255, 255);
+  --color-text-wittebutton: rgb(0, 0, 0);
+  --color-text-grijs: rgb(204,204,204);
   --color-background: rgb(0, 0, 0);
-  --font-weight-normaal: 400;
+  --font-weight-normaal: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
   --primaire-button-color: rgb(255, 106, 0);
   --secundairebutton-color: rgb(255, 255, 255);
   --selected-abonnement: rgb(0, 128, 255);
@@ -26,17 +30,18 @@ body {
   color: var(--color-text);
   font-weight: var(--font-weight-normaal);
   text-align: center;
+  align-items: center;
   background-color: var(--color-background);
 }
 
 h1 {
-  font-size: 3em;
-  font-weight: var(--font-weight-normaal);
+  font-size: 2.5em;
+  font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  font-size: 2em;
-  font-weight: var(--font-weight-normaal);
+  font-size: 1.8em;
+  font-weight: var(--font-weight-medium);
 }
 
 h3 {
@@ -58,6 +63,14 @@ header {
   width: 100%;
 }
 
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -74,10 +87,14 @@ nav {
   backdrop-filter: blur(5px);
 }
 
-nav img {
-  width: 48px;
+nav img:nth-of-type(1) {
+  width: 5em;
+} 
+nav img:nth-of-type(2) {
+  width: 2em;
   height: auto;
-}
+  margin-right: 1em;
+} 
 
 /****************/
 /* JOUW STYLING */
@@ -101,20 +118,93 @@ a{
   color: var(--color-text);
 }
 
+section a {
+  color: var(--color-text-wittebutton);
+  font-weight: var(--font-weight-medium);
+  border-radius: 99px;
+  padding: 10px 16px;
+  width: 100%;
+  background-color: var(--secundairebutton-color);
+}
+
 li {
   list-style-type: none;
 }
+
 ul {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
 
-Primaire ahref 
+/* Hieronder styling voor homepagina */
+
+section:nth-of-type(2){
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(2) h2{
+  order: 1;
+}
+
+section:nth-of-type(2) p{
+  order: 0;
+  margin-bottom: 0;
+  font-weight: var(--font-weight-medium);
+  font-size: 1.25em;
+  color: var(--color-text-grijs);
+}
+
+section:nth-of-type(2) ul{
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+  order: 2;
+}
+
+section:nth-of-type(2) li{
+  display: flex;           
+  align-items: flex-start
+}
+
+section:nth-of-type(2) li::before{
+  content: "✅";
+  margin-right: 1em;
+  width: 1em;
+  line-height: 1;
+}
+/* https://www.w3schools.com/cssref/sel_before.php gebruikt voor ::before 
+/* https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com voor line-height */
 
 
+
+section:nth-of-type(3) ul{
+  flex-direction: column;
+  margin-top: 3em;
+  gap: 1em;
+}
+
+section:nth-of-type(3) ul img{
+  width: 100%;
+  height: auto;
+}
+
+section:nth-of-type(3) button{
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  font-size: 1.25em;
+  line-height: 1.8em;
+  background-color: var(--primaire-button-color);
+  width: 100%;
+  letter-spacing: 0.015em; 
+}
+/* https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com voor letterspacing */
 
 /* Feedback na eerste keer HTML bekijken */
 /* Geen pixels, maar ems */
 /* Gebruik een marker of ::before om vinkje toe te voegen bij list items */
 /* Zet je kleuren in variables */
+
+
