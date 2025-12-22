@@ -37,6 +37,7 @@ body {
 h1 {
   font-size: 2.5em;
   font-weight: var(--font-weight-bold);
+  margin-top: 2em;
 }
 
 h2 {
@@ -116,6 +117,7 @@ ul li:first-child button {
 a{
   text-decoration: none;
   color: var(--color-text);
+  width: 100%;
 }
 
 section a {
@@ -135,9 +137,20 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 8px;
+  padding: 0;
 }
 
 /* Hieronder styling voor homepagina */
+
+section:nth-of-type(1) button{
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: var(--font-weight-medium);
+}
+
+section:nth-of-type(1) h3{
+  font-size: 1.25em;
+}
 
 section:nth-of-type(2){
   text-align: left;
@@ -160,7 +173,6 @@ section:nth-of-type(2) p{
 section:nth-of-type(2) ul{
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 0;
   order: 2;
 }
 
@@ -207,4 +219,9 @@ section:nth-of-type(3) button{
 /* Gebruik een marker of ::before om vinkje toe te voegen bij list items */
 /* Zet je kleuren in variables */
 
+section:nth-of-type(4) article ul{
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
 
