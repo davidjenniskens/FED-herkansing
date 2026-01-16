@@ -1,5 +1,27 @@
-section{
-    padding: 0 1em;;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --color-text: rgb(255, 255, 255);
+  --color-text-wittebutton: rgb(0, 0, 0);
+  --color-text-grijs: rgb(204,204,204);
+  --color-text-p: #E1E1E1;
+  --color-background: rgb(0, 0, 0);
+  --font-weight-normaal: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --primaire-button-color: rgb(255, 106, 0);
+  --secundairebutton-color: rgb(255, 255, 255);
+  --selected-abonnement: rgb(0, 128, 255);
+  --unselected-abonnement: #303030;
 }
 
 section:nth-of-type(1){
@@ -18,14 +40,38 @@ section:nth-of-type(1) h3{
   margin: 1.5em, 1em;
 }
 
+section:nth-of-type(1) img{
+  margin-top: 1em;
+  padding-left: 1em;
+}
+
+/* marquee */
+marquee{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  margin: 4em 0;
+  padding: 1em 2em;
+  overflow: clip;
+}
+
+marquee img{
+  height: 2.5em;
+  width: auto;
+  padding-right: 2em;
+}
+
 section:nth-of-type(2){
-  text-align: left;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  margin: 5em 0;
 }
 
 section:nth-of-type(2) h2{
   order: 1;
+  margin: 0.5em 0 1em 0;
 }
 
 section:nth-of-type(2) p{
@@ -42,20 +88,20 @@ section:nth-of-type(2) ul{
   order: 2;
 }
 
-section:nth-of-type(2) li{
+section:nth-of-type(2) ul li{
   display: flex;           
-  align-items: flex-start
+  align-items: flex-start;
+  line-height: 1.5;
 }
 
-section:nth-of-type(2) li::before{
+section:nth-of-type(2) ul li::before{
   content: "✅";
   margin-right: 1em;
   width: 1em;
   line-height: 1;
 }
-/* https://www.w3schools.com/cssref/sel_before.php gebruikt voor ::before 
-/* https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com voor line-height */
-
+/* [https://www.w3schools.com/cssref/sel_before.php](https://www.w3schools.com/cssref/sel_before.php) gebruikt voor ::before 
+/* [https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com](https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com) voor line-height */
 
 
 section:nth-of-type(3) ul{
@@ -78,7 +124,8 @@ section:nth-of-type(3) button{
   width: 100%;
   letter-spacing: 0.015em; 
 }
-/* https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com voor letterspacing */
+/* [https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com](https://www.w3schools.com/css/css_text_spacing.asp?utm_source=chatgpt.com) voor letterspacing */
+
 
 section:nth-of-type(4) article ul{
   flex-direction: column;
@@ -86,42 +133,236 @@ section:nth-of-type(4) article ul{
   margin-top: 2em;
 }
 
-
 section:nth-of-type(3) article{
   width: 100%;
   height: auto;
 }
 
-/* 1. Maak van het article een Flex container */
-section:nth-of-type(5) article {
+section:nth-of-type(4) article {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 4em 0;
 }
 
-section:nth-of-type(5) article ul li {
+section:nth-of-type(4) article ul li {
   width: 100%;
 }
 
-/* 2. Pas de volgorde van de afbeelding aan */
-section:nth-of-type(5) article img {
-  order: -1; /* Standaard is 0. Alles lager dan 0 komt vooraan te staan */
+
+section:nth-of-type(4) article img {
+  order: -1; 
 }
 
-section:nth-of-type(5) article h3{
+section:nth-of-type(4) article h3{
   font-size: 1.8em;
   font-weight: 500;
   text-align: left;
   margin-bottom: 0;
 }
 
-section:nth-of-type(5) article p{
+section:nth-of-type(4) article p{
   text-align: left;
 }
 
-section:nth-of-type(5) article ul li a{
+section:nth-of-type(4) article ul li a{
     display: block;
     width: 100%;
     text-align: center;
+}
+
+/* Vertrouwd door miljoen gebruikers hieronder */
+section:nth-of-type(5){
+  margin: 8em 0;
+}
+
+/* lijst met cards */
+section:nth-of-type(5) ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+section:nth-of-type(5) ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2em 2em;
+  border-radius: 1.25em;
+  background-color: var(--unselected-abonnement);
+}
+
+section:nth-of-type(5) ul li div:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+section:nth-of-type(5) ul li div:first-of-type img {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+section:nth-of-type(5) ul li div h3 {
+  margin: 0 0 0.25em;
+  font-weight: var(--font-weight-medium);
+}
+
+section:nth-of-type(5) ul li p {
+  margin: 0;
+  color: var(--color-text-grijs);
+  font-weight: var(--font-weight-normaal);
+}
+
+/* Kies je abonnement */
+section:nth-of-type(6){
+  margin: 6em 0 4em 0;
+}
+
+section:nth-of-type(6) ul:first-of-type {
+  display: flex;              
+  justify-content: center;    
+  gap: 0.75em;                
+  margin-top: 4em;            
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2em 2em 1.375em;
+  border-radius: 1.25em;
+  background-color: var(--unselected-abonnement);
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 0.875em;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li h3{
+  margin: 0 0 0.5em;
+  font-weight: var(--font-weight-medium);
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li div p{
+  margin: 0;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li div p:first-of-type {
+  color: var(--color-text-grijs);
+  font-size: 1.125em;
+  font-weight: var(--font-weight-medium);
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li img {
+  order: -1;
+  width: 3em;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) li a {
+  padding: 0.625em 0;
+  color: white;
+  background-color: var(--unselected-abonnement);
+}
+
+section:nth-of-type(6) ul:last-of-type {
+  flex-direction: column;
+}
+
+section:nth-of-type(6) ul:last-of-type a:last-of-type {
+  color: white;
+  background: none;
+}
+
+/* Hieronder Veelgestelde vragen */
+section:nth-of-type(7){
+  margin: 8em 0;
+}
+
+section:nth-of-type(7) h2{
+  margin-bottom: 2em;
+}
+
+section:nth-of-type(7) div{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1em;
+  padding: 1.5em 1.5em 2em;
+  border-radius: 1.375em;
+  background-color: var(--unselected-abonnement);
+}
+
+section:nth-of-type(7) details > summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative; 
+  padding-left: 2em;
+  font-size: var(--font-weight-medium);
+}
+
+section:nth-of-type(7) details p{
+  padding-left: 2em;
+}
+
+section:nth-of-type(7) details > summary::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: var(--color-text-p);
+  font-size: 2.5em;
+  font-weight: var(--font-weight-normaal);
+  transform: translateY(-50%);
+  transition: transform 0.4s ease;
+}
+
+section:nth-of-type(7) details[open] > summary::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Gebruikt voor styling van summary 
+https://css-tricks.com/using-styling-the-details-element/) 
+[https://www.w3schools.com/cssref/sel_before.php](https://www.w3schools.com/cssref/sel_before.php) 
+
+
+Rotate animatie gebruikt uit lesmateriaal Week 4 Werkgroep 8 Animeren*/
+
+
+/* Hieronder Open je bankrekening in 5 minuten */
+section:nth-of-type(8) h2{
+  font-size: 2.25em;
+  font-weight: var(--font-weight-bold);
+}
+
+section:nth-of-type(8) p{
+  margin-bottom: 3em;
+}
+
+section:nth-of-type(8) a{
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 0.75em 1.25em;
+  line-height: 1.25em;
 }

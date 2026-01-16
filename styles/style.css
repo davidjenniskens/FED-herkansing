@@ -14,19 +14,21 @@
   /* startje */
   --color-text: rgb(255, 255, 255);
   --color-text-wittebutton: rgb(0, 0, 0);
-  --color-text-grijs: rgb(204,204,204);
+  --color-text-p: #E1E1E1;
+  --color-text-grijs: #cccccc;
   --color-background: rgb(0, 0, 0);
+  --color-background-footer: #1C1C1C;
   --font-weight-normaal: 300;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
   --primaire-button-color: rgb(255, 106, 0);
   --secundairebutton-color: rgb(255, 255, 255);
   --selected-abonnement: rgb(0, 128, 255);
-  --unselected-abonnement: rgb(69, 69, 69);
+  --unselected-abonnement: #303030;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Montserrat Placeholder", sans-serif;
   color: var(--color-text);
   font-weight: var(--font-weight-normaal);
   text-align: center;
@@ -35,13 +37,13 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: var(--font-weight-bold);
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.875em;
   font-weight: var(--font-weight-medium);
 }
 
@@ -51,6 +53,7 @@ h3 {
 }
 
 p {
+  color: var(--color-text-p);
   font-weight: var(--font-weight-normaal);
   font-size: 1em;
   line-height: 1.5em;
@@ -71,6 +74,8 @@ button {
   border-radius: 99px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5em;
 }
 
 nav {
@@ -96,6 +101,7 @@ nav img:nth-of-type(2) {
   width: 2em;
   height: auto;
   margin-right: 1em;
+  cursor: pointer;
 } 
 
 /****************/
@@ -121,9 +127,15 @@ a{
   width: 100%;
 }
 
+section{
+    padding: 0 1em;;
+}
+
 section a {
+  display: block;
   color: var(--color-text-wittebutton);
   font-weight: var(--font-weight-medium);
+  line-height: 1.5em;
   border-radius: 99px;
   padding: 10px 16px;
   width: 100%;
@@ -140,6 +152,84 @@ ul {
   gap: 8px;
   padding: 0;
 }
+
+
+footer{
+  text-align: left;
+  width: 100%;
+  padding: 4em 1em;
+  background-color: var(--color-background-footer);
+}
+
+footer h3{
+  margin: 2em 0 0.5em;
+  font-size: 1.25em;
+  font-weight: var(--font-weight-medium);
+}
+
+footer section:first-of-type h3{
+  margin: 0;
+}
+
+footer h4{
+  margin: 0.9em 0 0 0;
+  font-size: 1.125em;
+  font-weight: var(--font-weight-medium);
+}
+
+footer ul{
+  flex-direction: column;
+  gap: 0.375em;
+  font-size: 0.875em;
+}
+
+footer section{
+  padding: 0;
+}
+
+footer ul li{
+  padding: 0.375em 0;
+}
+
+footer ul li:first-of-type{
+  padding-top: 0;
+}
+
+
+/* Download app hieronder */
+
+footer section:nth-of-type(5) ul {
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+}
+
+footer section:nth-of-type(5) ul li{
+  padding: 0;
+}
+
+footer section:nth-of-type(5) ul li img {
+  height: 2.75em;
+  width: auto;
+}
+
+/* Socials hieronder */
+footer section:nth-of-type(6) ul {
+  flex-direction: row;
+  gap: 2.5em;
+  align-items: center;
+}
+
+footer section:nth-of-type(6) ul li a{
+  background-color: transparent;
+  padding: 0;
+}
+
+footer section:nth-of-type(6) ul li a img{
+  height: 2em;
+  width: auto;
+}
+
 /* Feedback na eerste keer HTML bekijken */
 /* Geen pixels, maar ems */
 /* Gebruik een marker of ::before om vinkje toe te voegen bij list items */

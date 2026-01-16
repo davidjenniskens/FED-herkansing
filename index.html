@@ -38,7 +38,29 @@
         />
       </section>
 
-      <marquee behavior="" direction="left"></marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+        <img src="images/home-pagina/marquee/wired-logo.svg" alt="Wired"/>
+        <img src="images/home-pagina/marquee/business_insider_logo.svg" alt="Business"/>
+        <img src="images/home-pagina/marquee/quote-logo.svg" alt="Quote"/>
+        <img src="images/home-pagina/marquee/bloomberg-logo.svg" alt="Bloomberg"/>
+        <img src="images/home-pagina/marquee/forbes-logo.svg" alt="Forbes"/>
+        <img src="images/home-pagina/marquee/reuters-logo.svg" alt="Reuters"/>
+        <img src="images/home-pagina/marquee/cnbc-logo.svg" alt="CNBC"/>
+        <img src="images/home-pagina/marquee/crunchr-logo.svg" alt="Crunchr"/>
+        <img src="images/home-pagina/marquee/wired-logo.svg" alt="Wired"/>
+        <img src="images/home-pagina/marquee/business_insider_logo.svg" alt="Business"/>
+        <img src="images/home-pagina/marquee/quote-logo.svg" alt="Quote"/>
+        <img src="images/home-pagina/marquee/bloomberg-logo.svg" alt="Bloomberg"/>
+        <img src="images/home-pagina/marquee/forbes-logo.svg" alt="Forbes"/>
+        <img src="images/home-pagina/marquee/reuters-logo.svg" alt="Reuters"/>
+        <img src="images/home-pagina/marquee/cnbc-logo.svg" alt="CNBC"/>
+        <img src="images/home-pagina/marquee/crunchr-logo.svg" alt="Crunchr"/>
+      </marquee>
+
+      <!-- Voor Marquee volgende bron gebruikt: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee oude
+       
+      CSS animatie: https://www.bennadel.com/blog/4536-creating-a-marquee-effect-with-css-animations.html of https://www.w3schools.in/css3/css-marquee#google_vignette
+      -->
 
       <section>
         <img src="images/home-pagina/home-alleswatjenodighebt.avif" alt="" />
@@ -58,41 +80,6 @@
             Regel alles zelf, 24/7 – precies zoals je van je bank verwacht.
           </li>
         </ul>
-      </section>
-
-      <section>
-        <h2>
-          Ontdek bunq vandaag nog en sluit je aan bij 20 miljoen andere
-          gebruikers
-        </h2>
-        <p>Meld je aan in slechts 5 minuten</p>
-        <ul>
-          <li>
-            <img
-              src="images/home-pagina/download de bunq app op je telefoon.svg"
-              alt="download de app"
-            />
-            <p>Download de bunq app op je telefoon.</p>
-          </li>
-          <li>
-            <img
-              src="images/home-pagina/home-contactgegevens.svg"
-              alt="Voer je contactgegevens in"
-            />
-            <p>Vul je naam, adres, e-mail en telefoonnummer in.</p>
-          </li>
-          <li>
-            <img
-              src="images/home-pagina/home-latenweselfiemaken.svg"
-              alt="Laten we een selfie maken"
-            />
-            <p>
-              Verifieer je ID met een korte video-selfie en begin meteen met
-              bankieren.
-            </p>
-          </li>
-        </ul>
-        <button>Open een bankrekening</button>
       </section>
 
       <section>
@@ -290,7 +277,10 @@
             duurzamere planeet.
           </p>
           <a href="">Meer</a>
-          <img src="images/home-pagina/home-compenseer-je-co2.svg" alt="Aantal bomen geplant" />
+          <img
+            src="images/home-pagina/home-compenseer-je-co2.svg"
+            alt="Aantal bomen geplant"
+          />
         </article>
       </section>
 
@@ -302,27 +292,43 @@
 
         <ul>
           <li>
-            <img src="images/home-pagina/" alt="" />
-            <h4>Verzekerd tot €100,000</h4>
-            <p>
-              Je geld is beschermd door het Nederlandse depositiegarantiestelsel
-              (DGS).
-            </p>
+            <div aria-hidden="true">
+              <img src="images/home-pagina/home-bunqpro.svg" alt="" />
+            </div>
+            <div>
+              <h3>Verzekerd tot €100.000</h3>
+              <p>
+                Je geld is beschermd door het Nederlandse
+                depositogarantiestelsel (DGS).
+              </p>
+            </div>
           </li>
           <li>
-            <img src="images/home-pagina/" alt="" />
-            <h4>Refund van Pasbetalingen</h4>
-            <p>Je geld is veilig als er iets misgaat.</p>
+            <div aria-hidden="true">
+              <img src="images/home-pagina/home-bunqpro.svg" alt="" />
+            </div>
+            <div>
+              <h3>Terugbetalingen</h3>
+              <p>Je geld is veilig als er iets misgaat.</p>
+            </div>
           </li>
           <li>
-            <img src="images/home-pagina/" alt="" />
-            <h4>Instant Betalingen</h4>
-            <p>Stuur en ontvang geld direct, zonder te wachten.</p>
+            <div aria-hidden="true">
+              <img src="images/home-pagina/home-bunqpro.svg" alt="" />
+            </div>
+            <div>
+              <h3>Instant Betalingen</h3>
+              <p>Stuur en ontvang geld direct, zonder te wachten.</p>
+            </div>
           </li>
           <li>
-            <img src="images/home-pagina/" alt="" />
-            <h4>24/7 support</h4>
-            <p>Directe hulp in jouw taal, wanneer je deze nodig hebt.</p>
+            <div aria-hidden="true">
+              <img src="images/home-pagina/home-bunqpro.svg" alt="" />
+            </div>
+            <div>
+              <h3>24/7 support</h3>
+              <p>Directe hulp in jouw taal, wanneer je deze nodig hebt.</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -340,77 +346,97 @@
         </ul>
         <ul>
           <li>
-            <h4>bunq Free</h4>
-            <p>Gratis</p>
-            <p>Jouw gratis bankrekening</p>
-            <img src="images/home-pagina/" alt="" />
+            <div>
+              <h3>bunq Free</h3>
+              <p>Gratis</p>
+              <p>Jouw gratis bankrekening</p>
+            </div>
+            <img src="images/home-pagina/home-bunqfree.svg" alt="" />
+            <a href="">Meer info</a>
           </li>
           <li>
-            <h4>bunq Free</h4>
-            <p>€3,99/maand</p>
-            <p>Jouw hoofdrekening</p>
-            <img src="images/home-pagina/" alt="" />
-            <a href="">Meer -> </a>
+            <div>
+              <h3>bunq Core</h3>
+              <p>€3,99/maand</p>
+              <p>Jouw hoofdrekening</p>
+            </div>
+            <img src="images/home-pagina/home-bunqqore.svg" alt="" />
+            <a href="">Meer info</a>
           </li>
           <li>
-            <h4>bunq Pro</h4>
-            <p>€9,99/maand</p>
-            <p>De bankrekening die budgetplanning eenvoudig maakt.</p>
-            <img src="images/home-pagina/" alt="" />
-            <a href="">Meer -></a>
+            <div>
+              <h3>bunq Pro</h3>
+              <p>€9,99/maand</p>
+              <p>De bankrekening die budgetplanning eenvoudig maakt.</p>
+            </div>
+            <img src="images/home-pagina/home-bunqpro.svg" alt="" />
+            <a href="">Meer info</a>
           </li>
           <li>
-            <h4>bunq Elite</h4>
-            <p>€18,99/maand</p>
-            <p>De premium bankrekening voor jouw internationale levensstijl.</p>
-            <img src="" alt="" />
-            <a href="">Meer</a>
+            <div>
+              <h3>bunq Elite</h3>
+              <p>€18,99/maand</p>
+              <p>
+                De premium bankrekening voor jouw internationale levensstijl.
+              </p>
+            </div>
+            <img src="images/home-pagina/home-bunqelite.svg" alt="" />
+            <a href="">Meer info</a>
           </li>
         </ul>
 
-        <a href="">Vergelijk onze persoonlijke bankrekeningen</a>
-        <a href="">Bekijk alle prijsdetails -></a>
+        <ul>
+          <a href="">Vergelijk onze persoonlijke bankrekeningen</a>
+          <a href="">Bekijk alle prijsdetails -></a>
+        </ul>
       </section>
 
       <section>
         <h2>Veelgestelde vragen</h2>
-
         <div>
-          <summary><strong>Wat is bunq</strong></summary>
           <details>
-            bunq is de digitale bank die het gedoe van geldbeheer uit de weg
-            ruimt. Makkelijk sparen, budgetteren en handige reisfuncties - met
-            bunq kun je je richten op wat echt telt.
+            <summary><strong>Wat is bunq?</strong></summary>
+            <p>
+              bunq is de digitale bank die het gedoe van geldbeheer uit de weg
+              ruimt. Makkelijk sparen, budgetteren en handige reisfuncties – met
+              bunq kun je je richten op wat echt telt.
+            </p>
           </details>
-          <summary><strong>Is bunq een Nederlandse bank?</strong></summary>
           <details>
-            Ja! bunq heeft zijn hoofdkantoor in Nederland en is een van de meest
-            innovatieve banken van Europa.
+            <summary><strong>Is bunq een Nederlandse bank?</strong></summary>
+            <p>
+              Ja! bunq heeft zijn hoofdkantoor in Nederland en is een van de
+              meest innovatieve banken van Europa.
+            </p>
           </details>
-          <summary><strong>Is bunq een onafhankelijke bank</strong></summary>
           <details>
-            bunq werd in 2012 in Nederland opgericht door Ali Niknam als een
-            technologiegedreven challenger-bank, met een focus op innovatie,
-            transparantie en eenvoud. In 2015 lanceerden we de bunq-app – de
-            eerste nieuwe bank in 35 jaar die een Europese bankvergunning kreeg
-            – en sindsdien dagen we de traditionele banken uit.
+            <summary>
+              <strong>Is bunq een onafhankelijke bank?</strong>
+            </summary>
+            <p>
+              bunq werd in 2012 in Nederland opgericht door Ali Niknam als
+              technologiegedreven challenger-bank, met focus op innovatie,
+              transparantie en eenvoud.
+            </p>
           </details>
-          <summary><strong>Wat maakt bunq een veilige bank?</strong></summary>
           <details>
-            Bij bunq is je geld volledig veilig en beschermd onder het
-            Nederlandse Depositogarantiestelsel (DGS), dat dekt spaargeld tot
-            €100.000. We gebruiken de nieuwste technologie om je financiële
-            gegevens te beschermen, waardoor je een vlotte en veilige
-            bankervaring hebt.
+            <summary>
+              <strong>Wat maakt bunq een veilige bank?</strong>
+            </summary>
+            <p>
+              Bij bunq is je geld volledig veilig en beschermd onder het
+              Nederlandse depositogarantiestelsel (DGS), dat spaargeld tot
+              €100.000 dekt.
+            </p>
           </details>
-          <summary>
-            <strong>Hoeveel rekeningen kun je hebben bij bunq?</strong>
-          </summary>
           <details>
-            Met de bunq Pro- en bunq Elite-abonnementen kun je tot wel 25
-            persoonlijke rekeningen openen en beheren. Of je nu je financiën
-            wilt organiseren of je spaargeld wilt categoriseren: bunq maakt
-            bankieren en budgetteren simpel en efficiënt.
+            <summary>
+              <strong>Hoeveel rekeningen kun je hebben bij bunq?</strong>
+            </summary>
+            <p>
+              Met de bunq Pro- en bunq Elite-abonnementen kun je tot wel 25
+              persoonlijke rekeningen openen en beheren.
+            </p>
           </details>
         </div>
       </section>
@@ -418,8 +444,11 @@
       <section>
         <h2>Open je bankrekening in 5 minuten</h2>
         <p>Ga nu aan de slag, met alleen je telefoon en ID.</p>
-        <button>Aan de slag</button>
-        <img src="images/home-pagina/" alt="Phone with bunq app" />
+        <a href="">Aan de slag</a>
+        <img
+          src="images/home-pagina/home-bunqtelefoon.avif"
+          alt="Phone with bunq app"
+        />
       </section>
     </main>
 
