@@ -28,6 +28,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "Montserrat", "Montserrat Placeholder", sans-serif;
   color: var(--color-text);
   font-weight: var(--font-weight-normaal);
@@ -40,6 +41,15 @@ h1 {
   font-size: 3em;
   font-weight: var(--font-weight-bold);
   margin-top: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 760px){
+  h1{
+    font-size: 4.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
 }
 
 h2 {
@@ -47,9 +57,22 @@ h2 {
   font-weight: var(--font-weight-medium);
 }
 
+@media screen and (min-width: 760px){
+  h2{
+    font-size: 3em;
+  }
+}
+
+
 h3 {
   font-size: 1.15em;
-  font-weight: var(--font-weight-normaal);
+  font-weight: var(--font-weight-);
+}
+
+@media screen and (min-width: 760px){
+  h3{
+    font-size: 1.25em;
+  }
 }
 
 p {
@@ -57,6 +80,12 @@ p {
   font-weight: var(--font-weight-normaal);
   font-size: 1em;
   line-height: 1.5em;
+}
+
+@media screen and (min-width: 760px){
+  p{
+    font-size: 1.25em;
+  }
 }
 
 img {
@@ -76,6 +105,12 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: var(--font-weight-medium);
   line-height: 1.5em;
+}
+
+@media screen and (min-width: 760px){
+  button{
+    width: min-content;
+  }
 }
 
 nav {
@@ -98,9 +133,8 @@ nav img:nth-of-type(1) {
   width: 5em;
 } 
 nav img:nth-of-type(2) {
-  width: 2em;
-  height: auto;
-  margin-right: 1em;
+  width: 2.5em;
+  height: 2.5em;
   cursor: pointer;
 } 
 
@@ -128,7 +162,13 @@ a{
 }
 
 section{
-    padding: 0 1em;;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 760px){
+  section{
+    padding: 0 2em;
+  }
 }
 
 section a {
@@ -202,6 +242,7 @@ footer section:nth-of-type(5) ul {
   flex-direction: row;
   gap: 0.5em;
   align-items: center;
+  margin-top: 3em;
 }
 
 footer section:nth-of-type(5) ul li{
@@ -218,6 +259,7 @@ footer section:nth-of-type(6) ul {
   flex-direction: row;
   gap: 2.5em;
   align-items: center;
+  margin-bottom: 3em;
 }
 
 footer section:nth-of-type(6) ul li a{
@@ -230,6 +272,27 @@ footer section:nth-of-type(6) ul li a img{
   width: auto;
 }
 
+/* Cookie info etc. hieronder */
+footer section:last-of-type ul li a{
+  padding: 0;
+  color: var(--color-text);
+  font-weight: var(--font-weight-normaal);
+  background-color: transparent;
+}
+
+footer section:last-of-type ul li button{
+  padding: 0;
+  width: fit-content;
+  text-align: left;
+  background-color: transparent;
+  font-weight: var(--font-weight-normaal);
+  margin-bottom: 2em;
+}
+
+footer section:last-of-type button{
+  width: 100%;
+  padding: 0.375em 0;
+}
 /* Feedback na eerste keer HTML bekijken */
 /* Geen pixels, maar ems */
 /* Gebruik een marker of ::before om vinkje toe te voegen bij list items */
