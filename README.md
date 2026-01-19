@@ -158,7 +158,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Order werkt. H2 eerst en dan de P die er visueel boven staat, maar in de HTML onder. In de Bunq website zelf is dat niet.
+  - Hij weet alle Headings en tekst goed te pakken
+  - Buttons zijn goed te vinden.
+  - De About Us pagina vindt de VoiceOver nog lastig om door te navigeren. Zo ging hij van een img van de section 1, naar de heading van section 2, om daarna de heading van section 1 voor te leggen. 
 
 </details>
 
