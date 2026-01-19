@@ -205,20 +205,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+ 
+  <img src="readme-images/karakteristiek.png" width="375px" alt="uitomst opdracht 1">
+  
+  Veel secties, zoals deze, wist ik gemakkelijk responsive te maken. Ik was blij dat dit zo makkelijk ging, aangezien het me maar een paar regels code kostte. Op wat uitzonderingen na. 
 
+<img src="readme-images/karakteristiek-1.png" width="375px" alt="uitomst opdracht 1">
+
+Het (responsive) maken van deze cards bij beide sections ging goed! Zo ben ik blij dat ik deze zo 1 op 1 heb kunnen krijgen. 
+  
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
   
   Tijdlijn gedeelte:
+  
   <img src="readme-images/bunq-welgelukt.png" width="375px" alt="top">
+  
   Op het begin van deze website keek ik best wel tegen deze sectie aan. Maar toen ik het voor mobile aan het maken was, ging dit een stuk makkelijker en sneller dan gedacht. Zo was het eigenlijk vooral met div's (sorry) en flex werken voor het linkergedeelte. Door eigenlijk logisch na te denken en hier destijds een breakdownschets van te maken viel het eigenlijk wel mee. 
+
+  <img src="readme-images/karakteristiek-1.png" width="375px" alt="uitomst opdracht 1">
+
+Het (responsive) maken van deze cards bij beide sections ging goed! Zo ben ik blij dat ik deze zo 1 op 1 heb kunnen krijgen. 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   
-<img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top"> <img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top">
+<img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top"> <img src="readme-images/bunq-nietgelukt.png" width="375px" alt="top">
+
 Dit is dezelfde sectie als hierboven. Het is me namelijk niet gelukt om dit door te vertalen naar desktop, ondanks dat ik wel logische oplossingen had. Als ik meer tijd had gehad, had ik hier meer tijd ingestoken, zodat ik helderder kon nadenken. Nu liep ik vast dat als ik een div van 100% breedte zou toevoegen bij een media query van 760px, dit niet lukte. Terwijl het wel op een logische oplossing leek. 
 
 **Hamburgermenu**
