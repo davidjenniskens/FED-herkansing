@@ -183,6 +183,7 @@ main section:last-of-type img {
   margin-bottom: 8em;
 }
 /* header */
+/* Voor de header https://youtu.be/flItyHiDm7E?si=ijDVlXptdeHR0gfu gebruikt, maar hamburgermenu lukte me niet. */
 header {
   position: fixed;
   inset: 0 0 auto 0;

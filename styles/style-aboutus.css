@@ -115,7 +115,6 @@ main section:nth-of-type(4) div,
 main section:nth-of-type(5) div {
   flex: 1 1 50%;
 }
-/* Bron bij verzinnen */
 
 @media screen and (min-width: 760px) {
   main section:nth-of-type(2),
