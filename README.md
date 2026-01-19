@@ -212,11 +212,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Korte omschrijving met plaatjes
   
   Tijdlijn gedeelte:
-  <img src="readme-images/bunq-nietgelukt2.png" width="375px" alt="top">
+  <img src="readme-images/bunq-welgelukt.png" width="375px" alt="top">
   Op het begin van deze website keek ik best wel tegen deze sectie aan. Maar toen ik het voor mobile aan het maken was, ging dit een stuk makkelijker en sneller dan gedacht. Zo was het eigenlijk vooral met div's (sorry) en flex werken voor het linkergedeelte. Door eigenlijk logisch na te denken en hier destijds een breakdownschets van te maken viel het eigenlijk wel mee. 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  
 <img src="readme-images/bunq-nietgelukt1.png" width="375px" alt="top">
 Dit is dezelfde sectie als hierboven. Het is me namelijk niet gelukt om dit door te vertalen naar desktop, ondanks dat ik wel logische oplossingen had. Als ik meer tijd had gehad, had ik hier meer tijd ingestoken, zodat ik helderder kon nadenken. Nu liep ik vast dat als ik een div van 100% breedte zou toevoegen bij een media query van 760px, dit niet lukte. Terwijl het wel op een logische oplossing leek. 
 
