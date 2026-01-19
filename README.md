@@ -218,7 +218,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   
-<img src="readme-images/bunq-nietgelukt1.png" width="375px" alt="top">
+<img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top"> <img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top">
 Dit is dezelfde sectie als hierboven. Het is me namelijk niet gelukt om dit door te vertalen naar desktop, ondanks dat ik wel logische oplossingen had. Als ik meer tijd had gehad, had ik hier meer tijd ingestoken, zodat ik helderder kon nadenken. Nu liep ik vast dat als ik een div van 100% breedte zou toevoegen bij een media query van 760px, dit niet lukte. Terwijl het wel op een logische oplossing leek. 
 
 **Hamburgermenu**
