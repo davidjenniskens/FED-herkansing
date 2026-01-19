@@ -14,10 +14,10 @@
   /* startje */
   --color-text: rgb(255, 255, 255);
   --color-text-wittebutton: rgb(0, 0, 0);
-  --color-text-p: #E1E1E1;
+  --color-text-p: #e1e1e1;
   --color-text-grijs: #cccccc;
   --color-background: rgb(0, 0, 0);
-  --color-background-footer: #1C1C1C;
+  --color-background-footer: #1c1c1c;
   --font-weight-normaal: 300;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
@@ -25,6 +25,7 @@
   --secundairebutton-color: rgb(255, 255, 255);
   --selected-abonnement: rgb(0, 128, 255);
   --unselected-abonnement: #303030;
+  --background-menu: rgb(35, 0, 46);
 }
 
 body {
@@ -44,8 +45,8 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-@media screen and (min-width: 760px){
-  h1{
+@media screen and (min-width: 760px) {
+  h1 {
     font-size: 4.5em;
     margin-top: 1.5em;
     margin-bottom: 0;
@@ -57,23 +58,29 @@ h2 {
   font-weight: var(--font-weight-medium);
 }
 
-@media screen and (min-width: 760px){
-  h2{
+@media screen and (min-width: 760px) {
+  h2 {
     font-size: 3em;
   }
 }
-
 
 h3 {
   font-size: 1.15em;
   font-weight: var(--font-weight-);
 }
 
-@media screen and (min-width: 760px){
-  h3{
+@media screen and (min-width: 760px) {
+  h3 {
     font-size: 1.25em;
   }
 }
+
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+/* bron voor break-word https://www.perplexity.ai/search/links-is-mijn-code-waarom-bree-JuG2W12.RI2QS0nDbaeRdg */
 
 p {
   color: var(--color-text-p);
@@ -82,8 +89,8 @@ p {
   line-height: 1.5em;
 }
 
-@media screen and (min-width: 760px){
-  p{
+@media screen and (min-width: 760px) {
+  p {
     font-size: 1.25em;
   }
 }
@@ -107,36 +114,12 @@ button {
   line-height: 1.5em;
 }
 
-@media screen and (min-width: 760px){
-  button{
-    width: min-content;
+@media screen and (min-width: 760px) {
+  button,
+  a {
+    width: max-content;
   }
 }
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1em;
-  
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-}
-
-nav img:nth-of-type(1) {
-  width: 5em;
-} 
-nav img:nth-of-type(2) {
-  width: 2.5em;
-  height: 2.5em;
-  cursor: pointer;
-} 
 
 /****************/
 /* JOUW STYLING */
@@ -155,18 +138,18 @@ ul li:first-child button {
   background-color: var(--selected-abonnement);
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--color-text);
   width: 100%;
 }
 
-section{
-    padding: 0 1em;
+section {
+  padding: 0 1em;
 }
 
-@media screen and (min-width: 760px){
-  section{
+@media screen and (min-width: 760px) {
+  section {
     padding: 0 2em;
   }
 }
@@ -193,109 +176,319 @@ ul {
   padding: 0;
 }
 
+/* generieke image */
+main section:last-of-type img {
+  width: 100%;
+  max-width: 45em;
+  margin-bottom: 8em;
+}
+/* header */
+header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
 
-footer{
-  text-align: left;
+header > nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+}
+header nav > a {
+  display: block;
+  width: 5em;
+  height: auto;
+}
+
+header nav > ul:first-of-type {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+header nav > ul:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 2em;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav > ul:first-of-type > li > a {
+  font-size: 1em;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0;
+}
+
+header nav > ul:nth-of-type(2) li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.675em 1em;
+  border-radius: 6em;
+  font-size: 1em;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+header > img:last-of-type {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  header > img:last-of-type {
+    display: block;
+    width: 2em;
+    margin-left: auto;
+  }
+
+  header {
+    display: flex;
+    padding: 1em;
+  }
+
+  header nav ul {
+    display: none !important;
+  }
+
+  header nav {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Inloggen */
+header nav > ul:nth-of-type(2) li:first-of-type a {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+/* Start nu */
+header nav > ul:nth-of-type(2) li:last-of-type a {
+  background-color: var(--primaire-button-color);
+  color: var(--color-text);
+}
+
+/* footer */
+
+footer {
   width: 100%;
   padding: 4em 1em;
   background-color: var(--color-background-footer);
+  color: var(--color-text);
+  text-align: left;
 }
 
-footer h3{
-  margin: 2em 0 0.5em;
+@media screen and (min-width: 760px) {
+  footer {
+    padding: 4em 2em 2em;
+  }
+}
+
+/* hieronder de navigatie */
+footer > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+footer > div:first-of-type > section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div:first-of-type h3 {
+  margin: 0 0 0.5em;
   font-size: 1.25em;
   font-weight: var(--font-weight-medium);
 }
-
-footer section:first-of-type h3{
-  margin: 0;
+@media screen and (min-width: 760px) {
+  footer div:first-of-type h3 {
+    margin-top: 0;
+  }
 }
 
-footer h4{
-  margin: 0.9em 0 0 0;
+footer > div:first-of-type h4 {
+  margin: 0.9em 0 0;
   font-size: 1.125em;
   font-weight: var(--font-weight-medium);
 }
 
-footer ul{
+footer > div:first-of-type ul {
+  display: flex;
   flex-direction: column;
   gap: 0.375em;
   font-size: 0.875em;
-}
-
-footer section{
   padding: 0;
+  margin-top: 0.375em;
 }
 
-footer ul li{
+@media screen and (min-width: 760px) {
+  footer div:first-of-type {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+footer > div:first-of-type > section:last-of-type {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+footer ul li {
   padding: 0.375em 0;
 }
 
-footer ul li:first-of-type{
-  padding-top: 0;
-}
-
-
-/* Download app hieronder */
-
-footer section:nth-of-type(5) ul {
-  flex-direction: row;
-  gap: 0.5em;
-  align-items: center;
-  margin-top: 3em;
-}
-
-footer section:nth-of-type(5) ul li{
+footer div section {
   padding: 0;
 }
 
-footer section:nth-of-type(5) ul li img {
-  height: 2.75em;
+@media screen and (min-width: 760px) {
+  footer div:first-of-type section {
+    min-width: 0;
+  }
+}
+
+footer > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+}
+@media screen and (min-width: 760px) {
+  footer div:nth-of-type(2) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* app-store buttons */
+footer > div:nth-of-type(2) > section:first-of-type ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer > div:nth-of-type(2) > section:first-of-type ul li {
+  padding: 0;
+}
+
+footer > div:nth-of-type(2) > section:first-of-type ul li img {
+  height: 2.5em;
   width: auto;
 }
 
-/* Socials hieronder */
-footer section:nth-of-type(6) ul {
+/* social media logos */
+footer > div:nth-of-type(2) > section:nth-of-type(2) ul {
+  display: flex;
   flex-direction: row;
-  gap: 2.5em;
+  gap: 1.5em;
   align-items: center;
-  margin-bottom: 3em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer section:nth-of-type(6) ul li a{
+footer > div:nth-of-type(2) > section:nth-of-type(2) ul li a {
   background-color: transparent;
   padding: 0;
 }
 
-footer section:nth-of-type(6) ul li a img{
+footer > div:nth-of-type(2) > section:nth-of-type(2) ul li a img {
   height: 2em;
   width: auto;
 }
 
-/* Cookie info etc. hieronder */
-footer section:last-of-type ul li a{
+@media screen and (min-width: 760px) {
+  footer > div:nth-of-type(2) > section:nth-of-type(2) ul li a img {
+    height: 1.5;
+    width: auto;
+  }
+}
+
+footer > section:last-of-type {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0;
+}
+@media screen and (min-width: 760px) {
+  footer > section:last-of-type {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 2em !important;
+  }
+}
+
+footer > section:last-of-type > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 760px) {
+  footer > section:last-of-type > ul {
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+  }
+}
+
+footer > section:last-of-type > ul li a {
   padding: 0;
   color: var(--color-text);
   font-weight: var(--font-weight-normaal);
   background-color: transparent;
 }
 
-footer section:last-of-type ul li button{
+footer > section:last-of-type > ul li button {
   padding: 0;
   width: fit-content;
   text-align: left;
   background-color: transparent;
   font-weight: var(--font-weight-normaal);
-  margin-bottom: 2em;
 }
 
-footer section:last-of-type button{
+footer > section:last-of-type > button {
   width: 100%;
-  padding: 0.375em 0;
 }
+
+@media screen and (min-width: 760px) {
+  footer section:last-of-type button {
+    width: max-content;
+    padding: 0.5em 1em;
+  }
+}
+
+footer div,
+footer > section:last-of-type {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 /* Feedback na eerste keer HTML bekijken */
 /* Geen pixels, maar ems */
 /* Gebruik een marker of ::before om vinkje toe te voegen bij list items */
 /* Zet je kleuren in variables */
-
-

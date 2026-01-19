@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
@@ -16,29 +16,58 @@
   <body>
     <header>
       <nav>
-        <img src="images/home-pagina/logo.svg" alt="bunq logo" />
-        <img src="images/home-pagina/hamburger-menu.svg" alt="Menu" />
+        <a href="https://www.bunq.com/en-nl/"
+          ><img src="images/home-pagina/logo.svg" alt="bunq logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="#">Persoonlijk</a>
+          </li>
+          <li>
+            <a href="#">Zakelijk</a>
+          </li>
+          <li>
+            <a href="#">Over bunq</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Inloggen</a>
+          </li>
+          <li>
+            <a href="#">Start nu</a>
+          </li>
+        </ul>
       </nav>
+      <img
+        src="images/home-pagina/hamburger-menu.svg"
+        alt="hamburger"
+        class="hamburger"
+      />
     </header>
     <main>
       <section>
-        <h1>
-          bank of <br />
-          The Free
-        </h1>
-        <h3><strong>Mobiel bankieren dat <br> het leven makkelijk maakt</strong></h3>
-        <p>
-          Meld je aan in slechts 5 minuten met alleen je telefoon en ID. Probeer
-          bunq vandaag nog – jouw bank, altijd bij je.
-        </p>
-        <button>Open een bankrekening</button>
+        <div>
+          <h1>
+            bank of <br />
+            The Free
+          </h1>
+          <h3>
+            <strong>Mobiel bankieren dat het leven makkelijk maakt</strong>
+          </h3>
+          <p>
+            Meld je aan in slechts 5 minuten met alleen je telefoon en ID.
+            Probeer bunq vandaag nog – jouw bank, altijd bij je.
+          </p>
+          <button>Open een bankrekening</button>
+        </div>
         <img
           src="images/home-pagina/home-header-handtelefoon.avif"
           alt="Bunq app in a phone"
         />
       </section>
 
-      <marquee behavior="scroll" direction="left" scrollamount="3">
+      <marquee behavior="scroll" direction="left" scrollamount="4">
         <img src="images/home-pagina/marquee/wired-logo.svg" alt="Wired" />
         <img
           src="images/home-pagina/marquee/business_insider_logo.svg"
@@ -69,29 +98,28 @@
         <img src="images/home-pagina/marquee/crunchr-logo.svg" alt="Crunchr" />
       </marquee>
 
-      <!-- Voor Marquee volgende bron gebruikt: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee oude
-       
-      CSS animatie: https://www.bennadel.com/blog/4536-creating-a-marquee-effect-with-css-animations.html of https://www.w3schools.in/css3/css-marquee#google_vignette
-      -->
+      <!-- Voor Marquee volgende bron gebruikt: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee -->
 
       <section>
         <img src="images/home-pagina/home-alleswatjenodighebt.avif" alt="" />
-        <h2>Alles wat je nodig hebt van een online bank in 1 app</h2>
-        <p>Bankieren waar je ook bent</p>
-        <ul>
-          <li>Altijd overzicht met slimme geldpotjes.</li>
-          <li>
-            Zie precies waar je geld blijft met slimme meldingen en inzichten.
-          </li>
-          <li>
-            Laat je spaargeld groeien met tot wel 2,01% rente – een van de beste
-            spaarrentes.
-          </li>
-          <li>Koop & verkoop crypto veilig, direct vanuit je bunq app.</li>
-          <li>
-            Regel alles zelf, 24/7 – precies zoals je van je bank verwacht.
-          </li>
-        </ul>
+        <div>
+          <h2>Alles wat je nodig hebt van een online bank in 1 app</h2>
+          <p>Bankieren waar je ook bent</p>
+          <ul>
+            <li>Altijd overzicht met slimme geldpotjes.</li>
+            <li>
+              Zie precies waar je geld blijft met slimme meldingen en inzichten.
+            </li>
+            <li>
+              Laat je spaargeld groeien met tot wel 2,01% rente – een van de
+              beste spaarrentes.
+            </li>
+            <li>Koop & verkoop crypto veilig, direct vanuit je bunq app.</li>
+            <li>
+              Regel alles zelf, 24/7 – precies zoals je van je bank verwacht.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
@@ -137,14 +165,16 @@
         </p>
 
         <article>
-          <h3>Alles helder in beeld</h3>
-          <p>
-            Organiseer je uitgaven, spaargeld en vaste lasten zoals jij dat
-            wilt. Maak eenvoudig aparte rekeningen, elk met een eigen IBAN. Je
-            kunt vanaf elke rekening geld overmaken, incasso's laten afschrijven
-            of betalen met je bunq pas.
-          </p>
-          <a href="">Ontdek Bankrekeningen</a>
+          <div>
+            <h3>Alles helder in beeld</h3>
+            <p>
+              Organiseer je uitgaven, spaargeld en vaste lasten zoals jij dat
+              wilt. Maak eenvoudig aparte rekeningen, elk met een eigen IBAN. Je
+              kunt vanaf elke rekening geld overmaken, incasso's laten
+              afschrijven of betalen met je bunq pas.
+            </p>
+            <a href="">Ontdek Bankrekeningen</a>
+          </div>
           <img
             src="images/home-pagina/home-alleshelderinbeeld.svg"
             alt="overzicht uitgaven"
@@ -152,28 +182,32 @@
         </article>
 
         <article>
-          <h3>Een pas die overal werkt</h3>
-          <p>
-            Zodra je begint, krijg je een digitale creditcard die je kunt
-            gebruiken met Apple Pay of Google Pay. Voor eenvoudig budgetteren
-            kun je je pas koppelen en betalen vanaf al je bankrekeningen. Je
-            fysieke pas kun je zelf ontwerpen, zodat hij helemaal uniek is.
-          </p>
-          <ul>
-            <li><a href="">Ontdek Apple Pay</a></li>
-            <li><a href="">Ontdek Google Pay</a></li>
-          </ul>
+          <div>
+            <h3>Een pas die overal werkt</h3>
+            <p>
+              Zodra je begint, krijg je een digitale creditcard die je kunt
+              gebruiken met Apple Pay of Google Pay. Voor eenvoudig budgetteren
+              kun je je pas koppelen en betalen vanaf al je bankrekeningen. Je
+              fysieke pas kun je zelf ontwerpen, zodat hij helemaal uniek is.
+            </p>
+            <ul>
+              <li><a href="">Ontdek Apple Pay</a></li>
+              <li><a href="">Ontdek Google Pay</a></li>
+            </ul>
+          </div>
           <img src="images/home-pagina/home-pasjes.avif" alt="" />
         </article>
 
         <article>
-          <h3>Bespaar terwijl je uitgeeft</h3>
-          <p>
-            Profiteer van de beste wisselkoersen met ZeroFX en spaar bunq Punten
-            om exclusieve beloningen te ontgrendelen. Gebruik je bunq pas en zie
-            de extra waarde oplopen!
-          </p>
-          <a href="">Meer info</a>
+          <div>
+            <h3>Bespaar terwijl je uitgeeft</h3>
+            <p>
+              Profiteer van de beste wisselkoersen met ZeroFX en spaar bunq
+              Punten om exclusieve beloningen te ontgrendelen. Gebruik je bunq
+              pas en zie de extra waarde oplopen!
+            </p>
+            <a href="">Meer info</a>
+          </div>
           <img
             src="images/home-pagina/home-pinbetaling.avif"
             alt="transactie"
@@ -181,26 +215,30 @@
         </article>
 
         <article>
-          <h3>Koop & verkoop crypto direct vanuit je bunq app</h3>
-          <p>
-            Aan de slag met crypto direct vanuit je bunq app. Kies uit de beste
-            cryptovaluta – kopen en verkopen gaat met slechts één tik. Je
-            transacties zijn beschermd met twee-factor-authenticatie en
-            encryptie.
-          </p>
-          <a href="">Ontdek Crypto</a>
+          <div>
+            <h3>Koop & verkoop crypto direct vanuit je bunq app</h3>
+            <p>
+              Aan de slag met crypto direct vanuit je bunq app. Kies uit de
+              beste cryptovaluta – kopen en verkopen gaat met slechts één tik.
+              Je transacties zijn beschermd met twee-factor-authenticatie en
+              encryptie.
+            </p>
+            <a href="">Ontdek Crypto</a>
+          </div>
           <img src="images/home-pagina/home-crypto.avif" alt="Crypto" />
         </article>
 
         <article>
-          <h3>Simpel starten met investeren</h3>
-          <p>
-            Om aandelen te kopen hoef je geen aparte trading-apps te installeren
-            of eindeloos papierwerk door te nemen. Laat je vermogen eenvoudig
-            groeien, zonder stress. Alles wat je nodig hebt vind je in de bunq
-            app.
-          </p>
-          <a href="">Ontdek Aandelen</a>
+          <div>
+            <h3>Simpel starten met investeren</h3>
+            <p>
+              Om aandelen te kopen hoef je geen aparte trading-apps te
+              installeren of eindeloos papierwerk door te nemen. Laat je
+              vermogen eenvoudig groeien, zonder stress. Alles wat je nodig hebt
+              vind je in de bunq app.
+            </p>
+            <a href="">Ontdek Aandelen</a>
+          </div>
           <img
             src="images/home-pagina/home-investeren.svg"
             alt="Investering grafiek"
@@ -208,41 +246,50 @@
         </article>
 
         <article>
-          <h3>Ga zorgeloos op reis</h3>
-          <p>
-            Bespaar tot 90% op roamingkosten met een eSIM, direct vanuit je bunq
-            app. Data op? Je kunt je eSIM overal opladen, ook als je even geen
-            internetverbinding hebt. Met bunq Elite krijg je elk jaar 8 GB
-            gratis wereldwijde data en ben je automatisch beschermd op al je
-            reizen dankzij de inbegrepen reisverzekering
-          </p>
-          <a href="">* Voorwaarden van toepassing</a>
-          <a href="">Meer info</a>
+          <div>
+            <h3>Ga zorgeloos op reis</h3>
+            <p>
+              Bespaar tot 90% op roamingkosten met een eSIM, direct vanuit je
+              bunq app. Data op? Je kunt je eSIM overal opladen, ook als je even
+              geen internetverbinding hebt. Met bunq Elite krijg je elk jaar 8
+              GB gratis wereldwijde data en ben je automatisch beschermd op al
+              je reizen dankzij de inbegrepen reisverzekering
+            </p>
+            <a href="">* Voorwaarden van toepassing</a>
+            <a href="">Meer info</a>
+          </div>
           <img src="images/home-pagina/home-reis.svg" alt="reizen" />
         </article>
 
         <article>
-          <h3>Laat je spaargeld moeiteloos groeien</h3>
-          <p>
-            Profiteer van hoge spaarrentes, tot wel 50% hoger dan bij
-            traditionele banken. Je rente wordt wekelijks uitbetaald, waardoor
-            je met samengestelde rente na verloop van tijd nog meer verdient!
-            Met Automatisch Sparen rond je iedere betaling naar boven af, en vul
-            je je spaargeld aan zonder dat je er omkijken naar hebt.
-          </p>
-          <a href="">* Voorwaarden van toepassing</a>
-          <a href="">Ontdek Spaarrekeningen</a>
-          <img src="images/home-pagina/home-reispotjes.avif" alt="Spaarrekening" />
+          <div>
+            <h3>Laat je spaargeld moeiteloos groeien</h3>
+            <p>
+              Profiteer van hoge spaarrentes, tot wel 50% hoger dan bij
+              traditionele banken. Je rente wordt wekelijks uitbetaald, waardoor
+              je met samengestelde rente na verloop van tijd nog meer verdient!
+              Met Automatisch Sparen rond je iedere betaling naar boven af, en
+              vul je je spaargeld aan zonder dat je er omkijken naar hebt.
+            </p>
+            <a href="">* Voorwaarden van toepassing</a>
+            <a href="">Ontdek Spaarrekeningen</a>
+          </div>
+          <img
+            src="images/home-pagina/home-reispotjes.avif"
+            alt="Spaarrekening"
+          />
         </article>
 
         <article>
-          <h3>Leg een gegarandeerde rente vast.</h3>
-          <p>
-            Verdien tot 2,11% jaarlijkse rente op je spaargeld. Zet je geld
-            opzij en geniet van een gegarandeerde rente voor de door jou gekozen
-            looptijd.
-          </p>
-          <a href="">Ontdek termijndeposito's</a>
+          <div>
+            <h3>Leg een gegarandeerde rente vast.</h3>
+            <p>
+              Verdien tot 2,11% jaarlijkse rente op je spaargeld. Zet je geld
+              opzij en geniet van een gegarandeerde rente voor de door jou
+              gekozen looptijd.
+            </p>
+            <a href="">Ontdek termijndeposito's</a>
+          </div>
           <img
             src="images/home-pagina/home-spaarvarken.avif"
             alt="Spaarpotjes"
@@ -250,30 +297,34 @@
         </article>
 
         <article>
-          <h3>Kies waar wij je deposito's opslaan</h3>
-          <p>
-            In tegenstelling tot traditionele banken geeft bunq jou de controle.
-            Wij zijn de enige bank waarbij jij bepaalt waar je geld wordt
-            geïnvesteerd. We investeren ethisch, en jij kiest in de app de
-            sectoren die bij jouw waarden passen. Zo draagt jouw geld bij aan
-            een duurzamere economie – een die overeenkomt met jouw idee van een
-            betere toekomst.
-          </p>
-          <a href="">Meer info</a>
+          <div>
+            <h3>Kies waar wij je deposito's opslaan</h3>
+            <p>
+              In tegenstelling tot traditionele banken geeft bunq jou de
+              controle. Wij zijn de enige bank waarbij jij bepaalt waar je geld
+              wordt geïnvesteerd. We investeren ethisch, en jij kiest in de app
+              de sectoren die bij jouw waarden passen. Zo draagt jouw geld bij
+              aan een duurzamere economie – een die overeenkomt met jouw idee
+              van een betere toekomst.
+            </p>
+            <a href="">Meer info</a>
+          </div>
           <img src="images/home-pagina/home-depositos.svg" alt="" />
         </article>
 
         <article>
-          <h3>Compenseer je CO2</h3>
-          <p>
-            Als je met je bunq pas betaalt, spaar je bomen. Elke boom die je
-            spaart wordt op het juiste moment, op de juiste plek geplant en de
-            groei ervan nauwlettend gevolgd door onze partner veritree. In de
-            bunq app zie je de positieve impact van jouw bomen in de loop van de
-            tijd. Zo draag je met elke aankoop gemakkelijk bij aan een
-            duurzamere planeet.
-          </p>
-          <a href="">Meer info</a>
+          <div>
+            <h3>Compenseer je CO2</h3>
+            <p>
+              Als je met je bunq pas betaalt, spaar je bomen. Elke boom die je
+              spaart wordt op het juiste moment, op de juiste plek geplant en de
+              groei ervan nauwlettend gevolgd door onze partner veritree. In de
+              bunq app zie je de positieve impact van jouw bomen in de loop van
+              de tijd. Zo draag je met elke aankoop gemakkelijk bij aan een
+              duurzamere planeet.
+            </p>
+            <a href="">Meer info</a>
+          </div>
           <img
             src="images/home-pagina/home-compenseer-je-co2.svg"
             alt="Aantal bomen geplant"
@@ -315,7 +366,7 @@
             </div>
             <div>
               <h3>Instant Betalingen</h3>
-              <p>Stuur en ontvang geld direct, zonder te wachten.</p>
+              <p>Stuur en ontvang geld onmiddelijk, zonder te wachten.</p>
             </div>
           </li>
           <li>
@@ -346,7 +397,7 @@
             <div>
               <h3>bunq Free</h3>
               <p>Gratis</p>
-              <p>Jouw gratis bankrekening</p>
+              <p>Jouw gratis bankrekening.</p>
             </div>
             <img src="images/home-pagina/home-bunqfree.svg" alt="" />
             <a href="">Meer info</a>
@@ -355,7 +406,7 @@
             <div>
               <h3>bunq Core</h3>
               <p>€3,99/maand</p>
-              <p>Jouw hoofdrekening</p>
+              <p>Jouw hoofdrekening.</p>
             </div>
             <img src="images/home-pagina/home-bunqqore.svg" alt="" />
             <a href="">Meer info</a>
@@ -392,7 +443,7 @@
         <h2>Veelgestelde vragen</h2>
         <div>
           <details>
-            <summary><strong>Wat is bunq?</strong></summary>
+            <summary>Wat is bunq?</summary>
             <p>
               bunq is de digitale bank die het gedoe van geldbeheer uit de weg
               ruimt. Makkelijk sparen, budgetteren en handige reisfuncties – met
@@ -400,16 +451,14 @@
             </p>
           </details>
           <details>
-            <summary><strong>Is bunq een Nederlandse bank?</strong></summary>
+            <summary>Is bunq een Nederlandse bank?</summary>
             <p>
               Ja! bunq heeft zijn hoofdkantoor in Nederland en is een van de
               meest innovatieve banken van Europa.
             </p>
           </details>
           <details>
-            <summary>
-              <strong>Is bunq een onafhankelijke bank?</strong>
-            </summary>
+            <summary>Is bunq een onafhankelijke bank?</summary>
             <p>
               bunq werd in 2012 in Nederland opgericht door Ali Niknam als
               technologiegedreven challenger-bank, met focus op innovatie,
@@ -417,9 +466,7 @@
             </p>
           </details>
           <details>
-            <summary>
-              <strong>Wat maakt bunq een veilige bank?</strong>
-            </summary>
+            <summary>Wat maakt bunq een veilige bank?</summary>
             <p>
               Bij bunq is je geld volledig veilig en beschermd onder het
               Nederlandse depositogarantiestelsel (DGS), dat spaargeld tot
@@ -427,9 +474,7 @@
             </p>
           </details>
           <details>
-            <summary>
-              <strong>Hoeveel rekeningen kun je hebben bij bunq?</strong>
-            </summary>
+            <summary>Hoeveel rekeningen kun je hebben bij bunq?</summary>
             <p>
               Met de bunq Pro- en bunq Elite-abonnementen kun je tot wel 25
               persoonlijke rekeningen openen en beheren.
@@ -439,7 +484,7 @@
       </section>
 
       <section>
-        <h2>Open je bankrekening in 5 minuten</h2>
+        <h2>Open je bankrekening <br />in 5 minuten</h2>
         <p>Ga nu aan de slag, met alleen je telefoon en ID.</p>
         <a href="">Aan de slag</a>
         <img
@@ -449,143 +494,149 @@
       </section>
     </main>
     <footer>
-      <section>
-        <h3>Persoonlijke rekeningen</h3>
+      <div>
+        <section>
+          <h3>Persoonlijke rekeningen</h3>
 
-        <h4>Ontdek bunq</h4>
-        <ul>
-          <li>Voor Expats</li>
-          <li>Voor koppels</li>
-          <li>Voor ouders</li>
-          <li>Voor studenten</li>
-          <li>Om te sparen</li>
-          <li>Passen</li>
-          <li>Crypto</li>
-        </ul>
+          <h4>Ontdek bunq</h4>
+          <ul>
+            <li>Voor Expats</li>
+            <li>Voor koppels</li>
+            <li>Voor ouders</li>
+            <li>Voor studenten</li>
+            <li>Om te sparen</li>
+            <li>Passen</li>
+            <li>Crypto</li>
+          </ul>
 
-        <h4>Bankier-abonnementen</h4>
-        <ul>
-          <li>bunq Free</li>
-          <li>bunq Core</li>
-          <li>bunq Pro</li>
-          <li>bunq Elite</li>
-          <li>Vergelijk abonnementen</li>
-        </ul>
-      </section>
+          <h4>Bankier-abonnementen</h4>
+          <ul>
+            <li>bunq Free</li>
+            <li>bunq Core</li>
+            <li>bunq Pro</li>
+            <li>bunq Elite</li>
+            <li>Vergelijk abonnementen</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Zakelijke rekeningen</h3>
+        <section>
+          <h3>Zakelijke rekeningen</h3>
 
-        <h4>Ontdek bunq Business</h4>
-        <ul>
-          <li>bunq Business</li>
-          <li>Kostenbeheer</li>
-          <li>Zakelijke Spaarrekening</li>
-          <li>Zakelijke passen</li>
-          <li>Zakelijke Integraties</li>
-          <li>Zakelijke Automatisering</li>
-        </ul>
+          <h4>Ontdek bunq Business</h4>
+          <ul>
+            <li>bunq Business</li>
+            <li>Kostenbeheer</li>
+            <li>Zakelijke Spaarrekening</li>
+            <li>Zakelijke passen</li>
+            <li>Zakelijke Integraties</li>
+            <li>Zakelijke Automatisering</li>
+          </ul>
 
-        <h4>Bankier-abonnementen</h4>
-        <ul>
-          <li>bunq Free Business</li>
-          <li>bunq Core Business</li>
-          <li>bunq Pro Business</li>
-          <li>bunq Elite Business</li>
-          <li>Vergelijk abonnementen</li>
-        </ul>
-      </section>
+          <h4>Bankier-abonnementen</h4>
+          <ul>
+            <li>bunq Free Business</li>
+            <li>bunq Core Business</li>
+            <li>bunq Pro Business</li>
+            <li>bunq Elite Business</li>
+            <li>Vergelijk abonnementen</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Bedrijf</h3>
-        <ul>
-          <li>Over Ons</li>
-          <li>Colofon</li>
-          <li>Beveiliging</li>
-          <li>Duurzaamheid</li>
-          <li>Herbebossing</li>
-          <li>Blog</li>
-          <li>Leercentrum</li>
-          <li>Reviews</li>
-          <li>Pers</li>
-          <li>Vacatures</li>
-          <li>Hypotheken</li>
-          <li>tricount</li>
-          <li>bunq Update</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Bedrijf</h3>
+          <ul>
+            <li>Over Ons</li>
+            <li>Colofon</li>
+            <li>Beveiliging</li>
+            <li>Duurzaamheid</li>
+            <li>Herbebossing</li>
+            <li>Blog</li>
+            <li>Leercentrum</li>
+            <li>Reviews</li>
+            <li>Pers</li>
+            <li>Vacatures</li>
+            <li>Hypotheken</li>
+            <li>tricount</li>
+            <li>bunq Update</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Hulp</h3>
-        <ul>
-          <li>Hulpcentrum</li>
-          <li>Meld een probleem</li>
-          <li>Contact</li>
-          <li>Juridische documenten</li>
-          <li>Prijzen</li>
-          <li>Voorwaarden</li>
-          <li>Privacybeleid</li>
-          <li>Woordenlijst</li>
-          <li>Developers</li>
-          <li>Systeemstatus</li>
-        </ul>
-      </section>
-
-      <section>
-        <ul>
-          <li>
-            <img
-              src="images/home-pagina/footer/Download_on_the_App_Store_Badge_NL_RGB_blk.svg.png"
-              alt="Download in de App Store"
-            />
-          </li>
-          <li>
-            <img
-              src="images/home-pagina/footer/ontdek-het-op-googleplay.png"
-              alt="Ontdek het op Google Play"
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <ul>
-          <li>
-            <a href="https://x.com/bunq?lang=en">
-              <img src="images/home-pagina/footer/x.svg" alt="X" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/bunq">
+        <section>
+          <h3>Hulp</h3>
+          <ul>
+            <li>Hulpcentrum</li>
+            <li>Meld een probleem</li>
+            <li>Contact</li>
+            <li>Juridische documenten</li>
+            <li>Prijzen</li>
+            <li>Voorwaarden</li>
+            <li>Privacybeleid</li>
+            <li>Woordenlijst</li>
+            <li>Developers</li>
+            <li>Systeemstatus</li>
+          </ul>
+        </section>
+      </div>
+      <div>
+        <section>
+          <ul>
+            <li>
               <img
-                src="images/home-pagina/footer/linkedin.svg"
-                alt="Linkedin"
+                src="images/home-pagina/footer/Download_on_the_App_Store_Badge_NL_RGB_blk.svg.png"
+                alt="Download in de App Store"
               />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/bunq/">
+            </li>
+            <li>
               <img
-                src="images/home-pagina/footer/instagram.svg"
-                alt="Instagram"
+                src="images/home-pagina/footer/ontdek-het-op-googleplay.png"
+                alt="Ontdek het op Google Play"
               />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/bunq">
-              <img
-                src="images/home-pagina/footer/facebook.svg"
-                alt="Facebook"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@bunq">
-              <img src="images/home-pagina/footer/youtube.svg" alt="YouTube" />
-            </a>
-          </li>
-        </ul>
-      </section>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              <a href="https://x.com/bunq?lang=en">
+                <img src="images/home-pagina/footer/x.svg" alt="X" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/bunq">
+                <img
+                  src="images/home-pagina/footer/linkedin.svg"
+                  alt="Linkedin"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bunq/">
+                <img
+                  src="images/home-pagina/footer/instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/bunq">
+                <img
+                  src="images/home-pagina/footer/facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@bunq">
+                <img
+                  src="images/home-pagina/footer/youtube.svg"
+                  alt="YouTube"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section>
         <ul>
           <li>
