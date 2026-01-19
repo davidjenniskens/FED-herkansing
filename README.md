@@ -230,23 +230,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>continu bijhouden terwijl je werkt</summary>
 
  In algemeen CSS:
-https://www.perplexity.ai/search/links-is-mijn-code-waarom-bree-JuG2W12.RI2QS0nDbaeRdg → break-word
-https://youtu.be/flItyHiDm7E?si=ijDVlXptdeHR0gfu → header
-
+ <ul>
+   <li> https://www.perplexity.ai/search/links-is-mijn-code-waarom-bree-JuG2W12.RI2QS0nDbaeRdg → break-word</li>
+ <li>https://youtu.be/flItyHiDm7E?si=ijDVlXptdeHR0gfu → header</li>
+</ul>
 In Home CSS:
-https://www.w3schools.com/cssref/sel_before.php → before
-https://www.w3schools.com/css/css_text_spacing.asp → line-height
-https://www.w3schools.com/css/css_text_spacing.asp → letterspacing
-https://chatgpt.com/share/696a61c5-1508-800e-80d8-92f4c4fcdcd4 → borderbox
-https://www.perplexity.ai/search/hoe-krijg-ik-deze-4-blokken-al-zoE24d7vQFyZaCMIEqf65Q → grid
-https://www.perplexity.ai/search/hoe-krijg-ik-meer-info-allemaa-WWw1mX3bSdaHyxAKKSISjw → margin-auto
-https://css-tricks.com/using-styling-the-details-element/ → details
+<ul>
+<li>https://www.w3schools.com/cssref/sel_before.php → before </li>
+<li>https://www.w3schools.com/css/css_text_spacing.asp → line-height</li>
+<li>https://www.w3schools.com/css/css_text_spacing.asp → letterspacing</li>
+<li>https://chatgpt.com/share/696a61c5-1508-800e-80d8-92f4c4fcdcd4 → borderbox</li>
+<li>https://www.perplexity.ai/search/hoe-krijg-ik-deze-4-blokken-al-zoE24d7vQFyZaCMIEqf65Q → grid</li>
+<li>https://www.perplexity.ai/search/hoe-krijg-ik-meer-info-allemaa-WWw1mX3bSdaHyxAKKSISjw → margin-auto</li>
+<li>https://css-tricks.com/using-styling-the-details-element/ → details</li>
+</ul>
 
 In Home HTML:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee → marquee 
-
+<ul>
+  <li>
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee → marquee </li>
+</ul>
 In About Us CSS:
-https://www.w3schools.com/cssref/css_pr_aspect-ratio.php → aspect-ratio
-https://www.w3schools.com/cssref/css3_pr_object-fit.php → object-fit
-https://www.perplexity.ai/search/hoe-kan-ik-ervoor-zorgen-dat-h-_Xu45PPURDqUCsk26_idGQ → line-clamp
+<ul> 
+<li>https://www.w3schools.com/cssref/css_pr_aspect-ratio.php → aspect-ratio</li>
+<li>https://www.w3schools.com/cssref/css3_pr_object-fit.php → object-fit</li>
+<li>(https://www.perplexity.ai/search/hoe-kan-ik-ervoor-zorgen-dat-h-_Xu45PPURDqUCsk26_idGQ → line-clamp)</li>
+</ul>
 </details>
