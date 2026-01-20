@@ -73,13 +73,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/pagina1-deel1" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/pagina1-deel2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/pagina1-deel3.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -159,7 +158,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Order werkt. H2 eerst en dan de P die er visueel boven staat, maar in de HTML onder. In de Bunq website zelf is dat niet.
+  - Hij weet alle Headings en tekst goed te pakken
+  - Buttons zijn goed te vinden.
+  - De About Us pagina vindt de VoiceOver nog lastig om door te navigeren. Zo ging hij van een img van de section 1, naar de heading van section 2, om daarna de heading van section 1 voor te leggen. 
 
 </details>
 
@@ -206,17 +208,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+ 
+  <img src="readme-images/karakteristiek.png" width="375px" alt="uitomst opdracht 1">
+  
+  Veel secties, zoals deze, wist ik gemakkelijk responsive te maken. Ik was blij dat dit zo makkelijk ging, aangezien het me maar een paar regels code kostte. Op wat uitzonderingen na. 
 
+<img src="readme-images/karakteristiek-1.png" width="375px" alt="uitomst opdracht 1">
+
+Het (responsive) maken van deze cards bij beide sections ging goed! Zo ben ik blij dat ik deze zo 1 op 1 heb kunnen krijgen. 
+  
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  
+  Tijdlijn gedeelte:
+  
+  <img src="readme-images/bunq-welgelukt.png" width="375px" alt="top">
+  
+  Op het begin van deze website keek ik best wel tegen deze sectie aan. Maar toen ik het voor mobile aan het maken was, ging dit een stuk makkelijker en sneller dan gedacht. Zo was het eigenlijk vooral met div's (sorry) en flex werken voor het linkergedeelte. Door eigenlijk logisch na te denken en hier destijds een breakdownschets van te maken viel het eigenlijk wel mee. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/karakteristiek-1.png" width="375px" alt="uitomst opdracht 1">
 
+Het (responsive) maken van deze cards bij beide sections ging goed! Zo ben ik blij dat ik deze zo 1 op 1 heb kunnen krijgen. 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  
+<img src="readme-images/bunq-nietgelukt.1.png" width="375px" alt="top"> <img src="readme-images/bunq-nietgelukt.png" width="375px" alt="top">
+
+Dit is dezelfde sectie als hierboven. Het is me namelijk niet gelukt om dit door te vertalen naar desktop, ondanks dat ik wel logische oplossingen had. Als ik meer tijd had gehad, had ik hier meer tijd ingestoken, zodat ik helderder kon nadenken. Nu liep ik vast dat als ik een div van 100% breedte zou toevoegen bij een media query van 760px, dit niet lukte. Terwijl het wel op een logische oplossing leek. 
+
+**Hamburgermenu**
+Ik heb nu een _fake_ hamburgermenu gemaakt die niet interactief is. Zo probeerde ik https://youtu.be/flItyHiDm7E?si=ijDVlXptdeHR0gfu te implementeren in mijn eigen code, maar liep ik vast. Wel wist ik uit zijn video de basis van de media queries te halen. Zo kon ik wel een menu maken die verdween of verscheen bij een bepaalde grootte. 
+  
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -230,12 +254,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+ In algemeen CSS:
+ <ul>
+   <li> https://www.perplexity.ai/search/links-is-mijn-code-waarom-bree-JuG2W12.RI2QS0nDbaeRdg → break-word</li>
+ <li>https://youtu.be/flItyHiDm7E?si=ijDVlXptdeHR0gfu → header</li>
+</ul>
+In Home CSS:
+<ul>
+<li>https://www.w3schools.com/cssref/sel_before.php → before </li>
+<li>https://www.w3schools.com/css/css_text_spacing.asp → line-height</li>
+<li>https://www.w3schools.com/css/css_text_spacing.asp → letterspacing</li>
+<li>https://chatgpt.com/share/696a61c5-1508-800e-80d8-92f4c4fcdcd4 → borderbox</li>
+<li>https://www.perplexity.ai/search/hoe-krijg-ik-deze-4-blokken-al-zoE24d7vQFyZaCMIEqf65Q → grid</li>
+<li>https://www.perplexity.ai/search/hoe-krijg-ik-meer-info-allemaa-WWw1mX3bSdaHyxAKKSISjw → margin-auto</li>
+<li>https://css-tricks.com/using-styling-the-details-element/ → details</li>
+</ul>
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+In Home HTML:
+<ul>
+  <li>
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/marquee → marquee </li>
+</ul>
+In About Us CSS:
+<ul> 
+<li>https://www.w3schools.com/cssref/css_pr_aspect-ratio.php → aspect-ratio</li>
+<li>https://www.w3schools.com/cssref/css3_pr_object-fit.php → object-fit</li>
+<li>(https://www.perplexity.ai/search/hoe-kan-ik-ervoor-zorgen-dat-h-_Xu45PPURDqUCsk26_idGQ → line-clamp)</li>
+</ul>
 </details>
