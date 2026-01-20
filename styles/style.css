@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+font-face{
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 500;
+}
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
