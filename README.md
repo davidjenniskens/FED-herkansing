@@ -161,7 +161,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Order werkt. H2 eerst en dan de P die er visueel boven staat, maar in de HTML onder. In de Bunq website zelf is dat niet.
   - Hij weet alle Headings en tekst goed te pakken
   - Buttons zijn goed te vinden.
-  - De About Us pagina vindt de VoiceOver nog lastig om door te navigeren. Zo ging hij van een img van de section 1, naar de heading van section 2, om daarna de heading van section 1 voor te leggen. 
+  - De About Us pagina vindt de VoiceOver nog lastig om door te navigeren. Zo ging hij van een img van de section 1, naar de heading van section 2, om daarna de heading van section 1 voor te leggen.
+  - Video van About Us pagina moet ook nog op pauze kunnen en niet op autoplay staan. Hier pauzeknop voor toevoegen.
+  - Sommige decoratieve images hoeven niet benoemd te worden. -> Dit op ignore zetten.
+
+    Zie hieronder foto's van de toegankelijkheidstest:
+    
+     <img src="readme-images/Toegankelijkheidstest/wcag-1.png" width="375px" alt="Toegankelijkheidstest 1">
+     <img src="readme-images/Toegankelijkheidstest/wcag-2.png" width="375px" alt="Toegankelijkheidstest 2">
+     <img src="readme-images/Toegankelijkheidstest/wcag-3.png" width="375px" alt="Toegankelijkheidstest 3">
+     <img src="readme-images/Toegankelijkheidstest/wcag-4.png" width="375px" alt="Toegankelijkheidstest 4">
+     <img src="readme-images/Toegankelijkheidstest/wcag-5.png" width="375px" alt="Toegankelijkheidstest 5">
 
 </details>
 
