@@ -9,7 +9,7 @@
 
 @font-face{
   font-family: 'Montserrat';
-  src: url(fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
@@ -139,10 +139,6 @@ li button {
   padding: 10px 16px;
   border: none;
   cursor: pointer;
-}
-
-ul li:first-child button {
-  background-color: var(--selected-abonnement);
 }
 
 a {
