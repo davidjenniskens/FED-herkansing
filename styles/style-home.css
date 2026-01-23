@@ -489,6 +489,10 @@ main section:nth-of-type(6) ul:nth-of-type(2) {
   background-color: var(--selected-abonnement);
 }
 
+.js-toggle:hover{
+  background-color: var(--selected-abonnement);
+}
+
 
 main section:nth-of-type(6) ul:nth-of-type(2) li {
   display: flex;
