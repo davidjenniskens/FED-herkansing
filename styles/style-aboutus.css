@@ -7,21 +7,6 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-  /* startje */
-  --color-text: rgb(255, 255, 255);
-  --color-text-wittebutton: rgb(0, 0, 0);
-  --color-text-grijs: rgb(204, 204, 204);
-  --color-text-p: #e1e1e1;
-  --color-background: rgb(0, 0, 0);
-  --font-weight-normaal: 300;
-  --font-weight-medium: 500;
-  --font-weight-bold: 600;
-  --primaire-button-color: rgb(255, 106, 0);
-  --secundairebutton-color: rgb(255, 255, 255);
-  --selected-abonnement: rgb(0, 128, 255);
-  --unselected-abonnement: #303030;
-}
 
 main section:nth-of-type(2),
 main section:nth-of-type(3),
